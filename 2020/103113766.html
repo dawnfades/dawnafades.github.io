@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="遥感数字图像处理, Blog">
+    <meta name="keywords" content="第二天, Blog">
     <meta name="description" content="�����ͻ���ϸ��Ǿޱ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>遥感数字图像处理 | Blog</title>
+    <title>第二天 | Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">遥感数字图像处理</h1>
+                    <h1 class="description center-align post-title">第二天</h1>
                 </div>
             </div>
         </div>
@@ -450,7 +450,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-10
+                    2020-10-31
                 </div>
                 
 
@@ -466,117 +466,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="1-图像处理概述"><a href="#1-图像处理概述" class="headerlink" title="1.图像处理概述"></a>1.图像处理概述</h2><p>图像（可见、不可见、数学函数）（image ，picture，pattern）：物理世界中对客观对象的表示。</p>
-<p>物理图像：自然世界中物质或能量的实际分布。</p>
-<p>遥感记录的是能量的分布</p>
-<p>数字图像：物体的数字表示。</p>
-<p>图片：由图，画或照相所产生的的表示。</p>
-<p>单位：像素（长宽可能不等）（二位矩阵方格）</p>
-<p>遥感数字图像：数字形式表达的遥感影像</p>
-<ul>
-<li>1.基本单元：像素</li>
-<li>2.每个像素具有空间位置特征（x，y）和属性特征（亮度）。</li>
-</ul>
-<p>遥感获取的都是单波段图像，彩色由几幅合成。</p>
-<p>遥感图像特性：宏观性 、科学性 、观测性 、不确定性 、多尺度</p>
-<p>数字图像是连续世界的离散表达</p>
-<h2 id="2-摇感数字图像处理：（两个观点：连续方法、离散方法）"><a href="#2-摇感数字图像处理：（两个观点：连续方法、离散方法）" class="headerlink" title="2.摇感数字图像处理：（两个观点：连续方法、离散方法）"></a>2.摇感数字图像处理：（两个观点：连续方法、离散方法）</h2><ul>
-<li><p>数字图像处理：强调图像之间进行变换（加减，拉伸）一个图像到另一个图像的过程。</p>
-</li>
-<li><p>数字图像分析：对感兴趣的目标进行检测和量测。（一个图像到数值或符号表示的过程）【归类过程等】</p>
-</li>
-<li><p>图像解译：进一步研究图像中各目标物质性质、特征和他们之间的相互关系。【分析的延申，目标之间的关系等】（强调计算机自动解译）</p>
-</li>
-</ul>
-<p>内容：图像校正（几何处理，图像复原）、图像增强 （算法运算、图像转换）、多源信息复合、计算机解译</p>
-<p>处理硬件系统：数字化器（传感器、数码相机、扫描仪等）、大容量存储器、显示和输出设备、操作台</p>
-<p>软件系统：ENVI（高光谱分析）、ERDAS（gis匹配良好）、PCI、ecognition（面向对象分类）。</p>
-<h1 id="第二章-遥感数字图像的显示及统计评价"><a href="#第二章-遥感数字图像的显示及统计评价" class="headerlink" title="第二章 遥感数字图像的显示及统计评价"></a>第二章 遥感数字图像的显示及统计评价</h1><h2 id="1-遥感图像的获取"><a href="#1-遥感图像的获取" class="headerlink" title="1.遥感图像的获取"></a>1.遥感图像的获取</h2><p>遥感系统</p>
-<p><img src="/2020/051053588.htm/%E9%81%A5%E6%84%9F%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%5Cimage-20200427224610453.png" alt="image-20200427224610453"></p>
-<p>传感器：</p>
-<p>摄影成像（搭载在飞机上，波长窄，图像清晰）：</p>
-<ul>
-<li>单片摄影（某个点）</li>
-<li>航线摄影（连续拍摄、相邻两张照片有重叠50%左右）</li>
-<li>面积摄影（帮相重叠“相邻两张”的重叠拼接15~30%也有航向重叠）</li>
-</ul>
-<p>扫描成像（多中心投影）：光机扫描仪（顺势视场角（空间分辨率）越小，影像越清晰，总视场角对应一行图像覆盖的地面范围）、推扫型（10s的扫描时间，清晰小于光机）</p>
-<p>遥感数据：（包括但不限于遥感数字图像）</p>
-<ul>
-<li>数据级别：一般拿到的就是2级数据，NASA、MODIS、TM/ETM+</li>
-<li>元数据：数据的数据（投影参数，时间等）</li>
-<li>数据格式：软件对应的格式</li>
-</ul>
-<p>遥感数据格式：</p>
-<ul>
-<li>通用数据格式：BSQ（按颜色顺序排序）波段![遥感数字图像处理\image-20200427232307219.png)</li>
-<li>BIL（按行顺序排序）居中<img src="/2020/051053588.htm/C:%5CUsers%5CVULCAN%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200427232438039.png" alt="image-20200427232438039">)从左往右看<img src="/2020/051053588.htm/%E9%81%A5%E6%84%9F%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%5Cimage-20200427232923909.png" alt="image-20200427232923909"></li>
-<li>BIP（按列排序）像素<img src="/2020/051053588.htm/%E9%81%A5%E6%84%9F%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%5Cimage-20200427232501793.png" alt="image-20200427232501793"></li>
-</ul>
-<p>专用数据格式：</p>
-<p>L5、HDF(EOS-MODIS\FY-3 ）、GEOTIFF / TIFF、MODIS_L1B、Img及ENVI格式</p>
-<p>遥感数据的读取：</p>
-<p><img src="/2020/051053588.htm/%E9%81%A5%E6%84%9F%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%5Cimage-20200505160304184.png" alt="image-20200505160304184"></p>
-<p>（二）遥感数字图像（地物的反射和发射信息）</p>
-<p>1.电磁波谱</p>
-<p>&lt;2.5（太阳）&gt;6（地球的辐射）</p>
-<p><img src="/2020/051053588.htm/%E9%81%A5%E6%84%9F%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%5Cimage-20200505160547049.png" alt="image-20200505160547049"></p>
-<p>2.遥感传感器的分辨力</p>
-<p>– <strong>辐射分辨力</strong></p>
-<p><strong>传感器区分所接收到的电磁波辐射强度差异的能力</strong> </p>
-<p> <strong>图像的量化位数</strong></p>
-<p>– <strong>谱分辨力（光谱、波谱）</strong></p>
-<ul>
-<li><strong>波长范围、数量</strong></li>
-<li><strong>全色图像、多光谱图像、高光谱图像</strong></li>
-<li><strong>按电磁波的波段范围划分：</strong></li>
-</ul>
-<ol>
-<li><strong>可见光-反射红外遥感（可见光遥感、光学遥感）</strong></li>
-<li><strong>热红外遥感</strong></li>
-</ol>
-<p>– <strong>空间分辨力：高/中/低 空间分辨率图像</strong></p>
-<p>两个目标间的最小距离、<strong>表征图像分辨地面目标细节能力的指标</strong>、<strong>像素、视场角、瞬时视场角</strong>、高空间分布率&lt;10m，中的10-1000m，低空&gt;100m</p>
-<p>– <strong>时间分辨力</strong>（<strong>感器对同一空间区域重复探测时，相邻两次探测时间间隔</strong>）</p>
-<p>指标：</p>
-<ol>
-<li><strong>传感器本身设计的时间分辨力（重复周期）</strong></li>
-<li><strong>根据应用要求人为设计的时间分辨力（重访周期）</strong></li>
-</ol>
-<p>周期长短：</p>
-<p><strong>超短（短）周期时间分辨力：小时</strong></p>
-<p><strong>中周期时间分辨力：天</strong></p>
-<p><strong>长周期时间分辨力：年</strong></p>
-<p>不相干图像：（ <strong>多光谱图像、高光谱图像、高空间分辨率图像</strong></p>
-<p> <strong>像素值：物体的辐射能量之和</strong>）</p>
-<p>相干图像：（ <strong>微波遥感图像</strong></p>
-<p> <strong>像素值：相关物体辐射的复振幅总和</strong>）</p>
-<p>3.采样和量化</p>
-<p>采样：</p>
-<ul>
-<li>空间采样（像素）地物分布的离散化（模糊、几何变形）</li>
-<li>波普采样（连续）（波段）地物能量的离散化</li>
-</ul>
-<p>量化：（常用传感器的量化位数，lat5  是8位量化   lat8  16量化）探测热量的量化会更高</p>
-<p> <strong>将连续的灰度值（地物能量）转换成整数灰度级</strong></p>
-<p><strong>的过程</strong></p>
-<p> <strong>可用量化位数定量描述</strong> </p>
-<p> <strong>数字值（DN）、灰度级、亮度值</strong></p>
-<p>（三）图像的统计特征</p>
-<p>1.误差原因：</p>
-<p><strong>a)环境（如大气散射）</strong></p>
-<p><strong>b)遥感系统的随机误差或系统故障</strong></p>
-<p><strong>c)数据分析之前不恰当的在轨或地面处理</strong></p>
-<p>2.</p>
-<p><strong>平均信息统计参数：包括影像各波段最小值、最大值、中值、众数、值域、均值等。</strong></p>
-<p><strong>变化信息统计参数：</strong>方差（像素的离散程度）、变差（像素最大减去最小）、反差（反应图像的显示效果和可比性）、对比度（图像亮度的整体变化，最白与最黑）</p>
-<p>3.直方图（表示灰度的分布规律）</p>
-<p>直方图的性质</p>
-<p><img src="/2020/051053588.htm/%E9%81%A5%E6%84%9F%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%5Cimage-20200505200855897.png" alt="image-20200505200855897"></p>
-<p>应用</p>
-<p><strong>1）根据直方图的形态可以大致推断图下那个的反差，然后可通过有目的地改变直方图形态来改善图像的对比度；</strong></p>
-<p><strong>2）通过直方图的形态还可以有助于解译图像。</strong></p>
-<p>熵反应图像信息丰富的程度，在图像编码中有重要意义</p>
+                <p><img src="/2020/103113766.htm/1-1604133999598.jpg" alt></p>
 
             </div>
             <hr/>
@@ -602,7 +492,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/051053588.html">http://yoursite.com/2020/051053588.html</a>
+                    <a href="http://yoursite.com/2020/103113766.html">http://yoursite.com/2020/103113766.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -805,9 +695,49 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/103113766.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="第二天">
+                        
+                        <span class="card-title">第二天</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            dawnfades
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/051013674.html">
                     <div class="card-image">
@@ -826,46 +756,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            dawnfades
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/042262124.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="第一个文件">
-                        
-                        <span class="card-title">第一个文件</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            测试文件：随便写点，希望自己能每个星期更新一篇文章。把自己的博客写的更加多样化，写一些自己所学的东西，编程之类的。不仅仅是让自己养成良好的习惯，更重要的是不想自己在未来后悔现在的颓废。加油！！
-
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
                             </span>
                         <span class="publish-author">
                             
